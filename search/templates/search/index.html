@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engine</title>   
+    <style>
+        /* Define the logo animation */
+        @keyframes color-change {
+            0% { color: #ff5a5f; }
+            2% { color: #ff4e55; }
+            4% { color: #ff4247; }
+            6% { color: #ff363d; }
+            8% { color: #ff2933; }
+            10% { color: #ff1b2d; }
+            12% { color: #ff0d26; }
+            14% { color: #ff0020; }
+            16% { color: #f9001e; }
+            18% { color: #e5001d; }
+            20% { color: #d0001c; }
+            22% { color: #ba001b; }
+            24% { color: #a5001a; }
+            26% { color: #8f0019; }
+            28% { color: #7a0018; }
+            30% { color: #650017; }
+            32% { color: #500016; }
+            34% { color: #3b0015; }
+            36% { color: #260014; }
+            38% { color: #110013; }
+            40% { color: #0d3f84; }
+            42% { color: #0b5099; }
+            44% { color: #0971ae; }
+            46% { color: #0782c3; }
+            48% { color: #0592d8; }
+            50% { color: #03a3ed; }
+            52% { color: #02b4ff; }
+            54% { color: #1ccaff; }
+            56% { color: #3cd1ff; }
+            58% { color: #5cd8ff; }
+            60% { color: #7ce0ff; }
+            62% { color: #9ce7ff; }
+            64% { color: #bcefef; }
+            66% { color: #dcefdf; }
+            68% { color: #f0f0cf; }
+            70% { color: #f7e4af; }
+            72% { color: #ffc888; }
+            74% { color: #ffb377; }
+            76% { color: #ff9d66; }
+            78% { color: #ff8944; }
+            80% { color: #ff7433; }
+            82% { color: #ff6033; }
+            84% { color: #ff4c22; }
+            86% { color: #ff3811; }
+            88% { color: #ff2400; }
+            90% { color: #ee1100; }
+            92% { color: #dd0000; }
+            94% { color: #cc0000; }
+            96% { color: #bb0000; }
+            98% { color: #aa0000; }
+            100% { color: #990000; }
+        }
+
+
+        /* Apply the logo animation to the span tag */
+        span {
+            animation: color-change 5s infinite;
+        }
+
+        body {
+            /* Center align content */
+            text-align: center;
+        }
+        form {
+            /* Add some margin */
+            margin-top: 50px;
+        }
+
+        h1{
+            margin-top: 5rem;
+            font-size: 5rem;
+            font-family: 'Product Sans', Arial, sans-serif;
+        }
+
+        .search-form-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 10vh;
+        }
+
+        form input[type="text"] {
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          border-radius: 4px;
+          box-shadow: 0px 0px 4px #999;
+          width: 400px;
+          margin-right: 10px;
+        }
+
+        form button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    
+    <h1><span>CodeLore</span></h1>
+    <div class="search-form-container">
+        <form action="{% url 'search_results' %}" method="get">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+      </div>
+</body>
+</html>
