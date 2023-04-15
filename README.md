@@ -8,5 +8,8 @@ https://search-engine-lilac.vercel.app/search/
 
 This link will take you to the search engine's web interface, where you can enter your search queries and get relevant search results.
 
-# Home Screen:
+# Home Page:
 <img src="https://github.com/Ibrahim99575/search_engine/blob/main/search-engine.png" alt="Homepage of search engine" width="500" height="300">
+
+# Result Page:
+<img src="https://github.com/Ibrahim99575/search_engine/blob/main/search-engine-2.png" alt="Homepage of search engine" width="500" height="300">
